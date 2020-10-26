@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/Shop_l.dir/main.cpp.o CMakeFiles/Shop_l.dir/Milk.cpp.o CMakeFiles/Shop_l.dir/Cheese.cpp.o CMakeFiles/Shop_l.dir/EmptyProduct.cpp.o  -o Shop_l 
