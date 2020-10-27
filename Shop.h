@@ -1,5 +1,6 @@
 #pragma once
 #include "Stock.h"
+#include "ShopAccount.h"
 
 using namespace std;
 
@@ -8,13 +9,20 @@ class Shop {
 
     Stock<MaxNumberOfProducts>* stock;
 
+    ShopAccount* shopAccount;
+
 public:
-    Shop(Stock<MaxNumberOfProducts>* stock){
+    Shop(Stock<MaxNumberOfProducts>* stock, ShopAccount* shopAccount){
         this->stock=stock;
+        this->shopAccount=shopAccount;
     }
 
     void removeProduct(unsigned int id){
-        this->stock->removeProduct(this->findProductIndexById(id));
+        unsigned int index = this->findProductIndexById(id);
+        if(index==INTMAX_MAX){
+            return;
+        }
+        this->stock->removeProduct(index);
     }
 
 private:
@@ -24,6 +32,7 @@ private:
                 return i;
             }
         }
+        return INTMAX_MAX;
     }
 };
 
