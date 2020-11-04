@@ -28,7 +28,7 @@ public:
         return this->products[index];
     }
 
-    unsigned int getProductCount(){
+    unsigned int getProductsCount(){
         return this->productsCount;
     }
 

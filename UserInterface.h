@@ -17,7 +17,7 @@ public:
     }
 
     void showAvailableProducts(){
-        unsigned int productsCount = this->stock->getProductCount();
+        unsigned int productsCount = this->stock->getProductsCount();
         for(int i=0;i<productsCount;i++) {
             Product *product = this->stock->getProduct(i);
             if (product->getName() == "empty name") {

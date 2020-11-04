@@ -56,7 +56,7 @@ public:
 
 private:
     unsigned int findProductIndexById(unsigned int id){
-        for(int i=0;i<this->stock->getProductCount();i++){
+        for(int i=0;i<this->stock->getProductsCount();i++){
             if(this->stock->getProduct(i)->getId()==id){
                 return i;
             }
