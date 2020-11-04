@@ -21,6 +21,9 @@ class Stock {
         new Milk ("Milk", 13.55, 4)
     };
 
+    template <unsigned int NumberOfProducts>
+    friend void showAllProducts(Stock<NumberOfProducts> &stock);
+
 public:
     Stock(){};
 
@@ -37,6 +40,21 @@ public:
     }
     ~Stock(){};
 };
+
+template <unsigned int NumberOfProducts>
+void showAllProducts(Stock<NumberOfProducts> &stock){
+    for(int i=0; i<stock.productsCount; i++){
+        if (stock.products[i]->getName() == "empty name") {
+            cout << "product not available" << endl;
+        } else {
+            cout << "product id: " << stock.products[i]->getId() << ", ";
+            cout << "product name: " << stock.products[i]->getName() << ", ";
+            cout << "product price: " << stock.products[i]->getPrice() << endl;
+        }
+    }
+}
+
+
 
 
 
