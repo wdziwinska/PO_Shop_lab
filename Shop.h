@@ -10,8 +10,6 @@ class Shop {
 
     friend class Stock<MaxNumberOfProducts>;
 
-//    Stock<MaxNumberOfProducts>* stock;
-
     ShopAccount* shopAccount;
 
 public:
