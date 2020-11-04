@@ -38,5 +38,7 @@ int main() {
     cout<< "Account balance: "<< clientAccount->getBalance() << endl;
     cout<< "Shop account balance: "<<shopAccount->getBalance() <<endl;
 
+    showAllProducts<MAX_NUMBER_OF_PRODUCTS>(*stock);
+
     return 0;
 }
