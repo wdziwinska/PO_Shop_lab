@@ -16,7 +16,7 @@ int main() {
 
     Stock<MAX_NUMBER_OF_PRODUCTS>* stock = new Stock<MAX_NUMBER_OF_PRODUCTS>();
 
-    Shop<MAX_NUMBER_OF_PRODUCTS>* shop = new Shop<MAX_NUMBER_OF_PRODUCTS>(stock, shopAccount);
+    Shop<MAX_NUMBER_OF_PRODUCTS>* shop = new Shop<MAX_NUMBER_OF_PRODUCTS>(shopAccount);
 
     Basket<MAX_NUMBER_OF_PRODUCTS>* basket = new Basket<MAX_NUMBER_OF_PRODUCTS>(stock, shop);
 

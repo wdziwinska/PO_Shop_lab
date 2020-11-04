@@ -5,7 +5,7 @@ Bank::Bank(ClientAccount *clientAccount, ShopAccount *shopAccount) {
     this->shopAccount=shopAccount;
 }
 
-Bank::~Bank() {}
+Bank::~Bank() { }
 
 bool Bank::transfer(float payment) {
     if(this->clientAccount->chargeMoney(payment)){
