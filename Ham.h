@@ -7,7 +7,7 @@ class Ham: public Product{
     string name="mleko";
     int id=1;
 
-//    friend void changeProductName(Ham &ham, string newName);
+    friend void changeProductName(Ham &ham, string newName);
 
 public:
     Ham(string name, float price, int id);
@@ -18,7 +18,3 @@ public:
     virtual string getName()override;
     virtual unsigned int getId()override;
 };
-//
-//void changeProductName(Ham &ham, string newName){
-//    ham.name=newName;
-//}

@@ -21,3 +21,7 @@ string Ham::getName() {
 unsigned int Ham::getId() {
     return id;
 }
+
+void changeProductName(Ham &ham, string newName){
+    ham.name=newName;
+}
