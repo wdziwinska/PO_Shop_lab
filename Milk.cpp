@@ -21,3 +21,6 @@ string Milk::getName() {
 unsigned int Milk::getId() {
     return id;
 }
+void changeProductName(Milk &milk, string newName){
+    milk.name=newName;
+}

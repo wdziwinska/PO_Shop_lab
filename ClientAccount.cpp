@@ -1,3 +1,4 @@
+#include <iostream>
 #include "ClientAccount.h"
 
 using namespace std;
@@ -16,4 +17,8 @@ bool ClientAccount::chargeMoney(float price) {
 
 float ClientAccount::getBalance() {
     return this->balance;
+}
+
+void showClientAccountBalance(ClientAccount &clientAccount){
+    cout << endl << "Client Account Balance (friend fucntion): " << clientAccount.getBalance();
 }

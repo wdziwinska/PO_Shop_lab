@@ -35,3 +35,8 @@ private:
         return PRODUCT_NOT_FOUND;
     }
 };
+
+//template <unsigned int NrOfProducts>
+//void theMessage(){
+//    cout <<endl<< "Prodcts have been removed" <<endl;
+//}

@@ -8,6 +8,8 @@ class Milk: public Product{
     int id=1;
 
 public:
+    friend void changeProductName(Milk &milk, string newName);
+
     Milk(string name, float price, int id);
 
     ~Milk();

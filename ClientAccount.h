@@ -5,6 +5,8 @@ class ClientAccount {
     float balance;
 
 public:
+    friend void showClientAccountBalance(ClientAccount &clientAccount);
+
     ClientAccount(float initialBalance);
 
     ~ClientAccount();

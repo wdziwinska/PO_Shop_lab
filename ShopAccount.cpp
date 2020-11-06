@@ -18,3 +18,7 @@ void ShopAccount::addMoney(float payment) {
 float ShopAccount::getBalance(){
     return this->balance;
 }
+
+void showShopAccountBalance(ShopAccount &shopAccount){
+    cout << endl << "Shop Account Balance (friend fucntion): " << shopAccount.getBalance();
+}

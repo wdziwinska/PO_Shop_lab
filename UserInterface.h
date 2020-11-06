@@ -11,6 +11,9 @@ class UserInterface{
     Basket<MaxNumberOfProducts>* basket;
 
 public:
+    template <unsigned int NrOfProducts>
+    void showShoppingPrice(Basket<NrOfProducts> &basket);
+
     UserInterface(Stock<MaxNumberOfProducts>* stock,Basket<MaxNumberOfProducts>* basket){
         this->stock=stock;
         this->basket=basket;
@@ -45,3 +48,7 @@ public:
         cout<< endl <<"Total price: "<<this->basket->calculatePrice()<<endl;
     }
 };
+template <unsigned int NrOfProducts>
+void showShoppingPrice(Basket<NrOfProducts> &basket){
+    cout<< endl <<"Total shopping price (friend function): "<< basket.calculatePrice()<<endl;
+}

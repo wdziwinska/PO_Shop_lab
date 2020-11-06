@@ -14,3 +14,4 @@ public:
 
     bool transfer(float payment);
 };
+

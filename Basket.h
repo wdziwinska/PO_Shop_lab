@@ -70,5 +70,5 @@ private:
 
 template <unsigned int NumberOfProducts>
 int showProductsCount(Basket<NumberOfProducts> &basket){
-    cout << endl << "Product count in basket: " << basket.getProductsCount();
+    cout << endl << "Product count in basket (friend function): " << basket.getProductsCount();
 }

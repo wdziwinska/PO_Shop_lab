@@ -8,6 +8,8 @@ class EmptyProduct: public Product {
     int id=0;
 
 public:
+    friend void changePrice(EmptyProduct &emptyProduct, float newPrice);
+
     EmptyProduct();
 
     ~EmptyProduct();

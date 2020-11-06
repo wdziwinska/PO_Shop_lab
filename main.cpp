@@ -40,6 +40,10 @@ int main() {
 
     showAllProducts<MAX_NUMBER_OF_PRODUCTS>(*stock);
     showProductsCount<MAX_NUMBER_OF_PRODUCTS>(*basket);
+    showClientAccountBalance(*clientAccount);
+    showShopAccountBalance(*shopAccount);
+    showShoppingPrice<MAX_NUMBER_OF_PRODUCTS>( *basket);
+//    theMessage<MAX_NUMBER_OF_PRODUCTS>();
 
-    return 0;
+        return 0;
 }

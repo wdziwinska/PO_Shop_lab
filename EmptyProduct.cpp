@@ -18,3 +18,6 @@ string EmptyProduct::getName() {
 unsigned int EmptyProduct::getId() {
     return id;
 }
+void changePrice(EmptyProduct &emptyProduct, float newPrice){
+    emptyProduct.price = newPrice;
+}

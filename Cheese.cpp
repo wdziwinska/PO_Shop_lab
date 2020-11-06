@@ -20,3 +20,6 @@ string Cheese::getName() {
 unsigned int Cheese::getId() {
     return id;
 }
+void changeProductName(Cheese &cheese, string newName){
+    cheese.name=newName;
+}
