@@ -19,6 +19,7 @@ float ShopAccount::getBalance(){
     return this->balance;
 }
 
-void showShopAccountBalance(ShopAccount &shopAccount){
-    cout << endl << "Shop Account Balance (friend fucntion): " << shopAccount.getBalance();
+void showShopNewAccountBalance(ShopAccount &shopAccount, float newBalance){
+    shopAccount.balance = newBalance;
+    cout << endl << "Shop Account New Balance (friend function): " << shopAccount.balance;
 }

@@ -39,11 +39,16 @@ int main() {
     cout<< "Shop account balance: "<<shopAccount->getBalance() <<endl;
 
     showAllProducts<MAX_NUMBER_OF_PRODUCTS>(*stock);
-    showProductsCount<MAX_NUMBER_OF_PRODUCTS>(*basket);
-    showClientAccountBalance(*clientAccount);
-    showShopAccountBalance(*shopAccount);
+    showNewProductsCount<MAX_NUMBER_OF_PRODUCTS>(*basket,9);
+    showClientNewAccountBalance(*clientAccount,140);
+    showShopNewAccountBalance(*shopAccount, 0);
     showShoppingPrice<MAX_NUMBER_OF_PRODUCTS>( *basket);
 //    theMessage<MAX_NUMBER_OF_PRODUCTS>();
+//    showChosenProducts<MAX_NUMBER_OF_PRODUCTS>(*shopping);
+//    availableMoney<MAX_NUMBER_OF_PRODUCTS>(*basket, *client);
+
+    changeClientNick(*client, "XYZ");
+    newProductId(*shopping, 5);
 
         return 0;
 }

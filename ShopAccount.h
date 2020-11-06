@@ -7,7 +7,7 @@ class ShopAccount {
     float balance;
 
 public:
-    friend void showShopAccountBalance(ShopAccount &shopAccount);
+    friend void showShopNewAccountBalance(ShopAccount &shopAccount, float NewBalance);
 
     ShopAccount(float initialBalance);
 

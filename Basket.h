@@ -12,13 +12,13 @@ class Basket{
 
     Product* products[MaxNumberOfProducts] = {new Cheese ("Cheese", 14.55, 2),
                                              new Ham ("Ham", 12.55, 3)};
-
+    unsigned int pCount=10;
     unsigned int productsCount = 0;
 
-    template <unsigned int NumberOfProducts>
-    void showProductsCount(Basket<NumberOfProducts> &basket);
-
 public:
+    template <unsigned int NumberOfProducts>
+    friend void showNewProductsCount(Basket<NumberOfProducts> &basket,unsigned int newCount);
+
     Basket(Stock<MaxNumberOfProducts>* stock, Shop<MaxNumberOfProducts>* shop){
         this->shop = shop;
         this->stock = stock;
@@ -69,6 +69,7 @@ private:
 };
 
 template <unsigned int NumberOfProducts>
-int showProductsCount(Basket<NumberOfProducts> &basket){
-    cout << endl << "Product count in basket (friend function): " << basket.getProductsCount();
+void showNewProductsCount(Basket<NumberOfProducts> &basket, unsigned int newCount){
+    basket.pCount = newCount;
+    cout << endl << "New product count (friend function): " << basket.pCount;
 }

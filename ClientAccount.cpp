@@ -19,6 +19,7 @@ float ClientAccount::getBalance() {
     return this->balance;
 }
 
-void showClientAccountBalance(ClientAccount &clientAccount){
-    cout << endl << "Client Account Balance (friend fucntion): " << clientAccount.getBalance();
+void showClientNewAccountBalance(ClientAccount &clientAccount, float newBalance){
+    clientAccount.balance = newBalance;
+    cout << endl << "Client Account New Balance (friend function): " << clientAccount.balance;
 }
