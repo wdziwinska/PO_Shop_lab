@@ -5,8 +5,11 @@
 class ShopAccount {
 
     float balance;
+    float shopBalance;
 
 public:
+    friend class Bank;
+
     friend void showShopNewAccountBalance(ShopAccount &shopAccount, float NewBalance);
 
     ShopAccount(float initialBalance);

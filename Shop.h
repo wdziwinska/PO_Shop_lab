@@ -12,7 +12,12 @@ class Shop {
 
     ShopAccount* shopAccount;
 
+    int countAvailableProduct=999;
+
 public:
+    template <unsigned int NrOfProducts>
+    friend void showCountAvailableProdcutInShop(Shop<NrOfProducts> &shop);
+
     Shop(ShopAccount* shopAccount){
         this->shopAccount=shopAccount;
     }
@@ -36,7 +41,7 @@ private:
     }
 };
 
-//template <unsigned int NrOfProducts>
-//void theMessage(){
-//    cout <<endl<< "Prodcts have been removed" <<endl;
-//}
+template <unsigned int NrOfProducts>
+void showCountAvailableProdcutInShop(Shop<NrOfProducts> &shop){
+    cout << "Count Available Product(friend function): " << shop.countAvailableProduct << endl;
+}

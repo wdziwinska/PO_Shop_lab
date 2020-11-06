@@ -14,8 +14,16 @@ float Client::pay(float payment) {
     }
 }
 
+void Client::clientNumber(ClientAccount &clientNumber){
+    clientNumber.number=1234;
+}
+
+void Client::bankName(Bank &bName) {
+    bName.bankName="QWERTY";
+}
+
 void changeClientNick(Client &client, string newNick){
     client.clientNick=newNick;
-    cout << "New Client nick (friedn function): " << client.clientNick << endl;
+    cout << "New Client nick (friend function): " << client.clientNick << endl;
 }
 

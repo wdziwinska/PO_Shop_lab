@@ -6,6 +6,8 @@ using namespace std;
 
 class Client {
 
+    friend class ClientAccount;
+
     ClientAccount* clientAccount;
     Bank* bank;
     string clientNick;
@@ -16,4 +18,8 @@ public:
     Client(ClientAccount *clientAccount, Bank *bank);
 
     float pay(float payment);
+
+    void clientNumber(ClientAccount &clientNumber);
+
+    void bankName(Bank &bName);
 };

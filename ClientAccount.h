@@ -3,8 +3,12 @@
 class ClientAccount {
 
     float balance;
+    int number;
 
 public:
+    friend class Client;
+    friend class Bank;
+
     friend void showClientNewAccountBalance(ClientAccount &clientAccount, float newBalance);
 
     ClientAccount(float initialBalance);

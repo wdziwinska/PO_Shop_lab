@@ -14,9 +14,15 @@ class Shopping {
 
     unsigned int productId;
 
+    int shopNumber=10;
+
+    void show(){
+        cout << "Chosen products: " <<endl;
+    }
+
 public:
-//    template<unsigned int NrOfProduct>
-//    friend void availableMoney(Basket<NrOfProduct> &basket, Client *client);
+    template<unsigned int Nr>
+    friend class UserInterface;
 
     template<unsigned int NrOfProduct>
     friend void newProductId(Shopping<NrOfProduct> &shopping, int newId);
@@ -48,8 +54,3 @@ void newProductId(Shopping<NrOfProduct> &shopping, int newId){
     shopping.productId=newId;
     cout << "New product Id (friend function): " << shopping.productId << endl;
 }
-
-//template <unsigned int NrOfProduct>
-//void availableMoney(Basket<NrOfProduct> &basket, Client &client){
-//    cout << "Available Client money (friend function): " << 100-client.pay(basket.calculatePrice()) << endl;
-//}

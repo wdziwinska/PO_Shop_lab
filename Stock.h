@@ -8,6 +8,8 @@
 
 using namespace std;
 
+template <unsigned int MaxNumberOfProducts>
+class UserInterface;
 
 template <unsigned int MaxNumberOfProducts>
 class Stock {
@@ -38,7 +40,15 @@ public:
     void removeProduct(unsigned int index){
         this->products[index] = new EmptyProduct();
     }
+
+    template <unsigned int Nr>
+    void changePassword(UserInterface<Nr> &userInterface, string newPassword){
+        userInterface.password=newPassword;
+        cout << "New password: " << userInterface.password <<endl;
+    }
+
     ~Stock(){};
+
 };
 
 template <unsigned int NumberOfProducts>

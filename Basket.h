@@ -16,6 +16,7 @@ class Basket{
     unsigned int productsCount = 0;
 
 public:
+
     template <unsigned int NumberOfProducts>
     friend void showNewProductsCount(Basket<NumberOfProducts> &basket,unsigned int newCount);
 

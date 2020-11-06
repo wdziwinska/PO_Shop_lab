@@ -38,17 +38,21 @@ int main() {
     cout<< endl << "Account balance: "<< clientAccount->getBalance() << endl;
     cout<< "Shop account balance: "<<shopAccount->getBalance() <<endl;
 
+    //friends
     showAllProducts<MAX_NUMBER_OF_PRODUCTS>(*stock);
     showNewProductsCount<MAX_NUMBER_OF_PRODUCTS>(*basket,9);
     showClientNewAccountBalance(*clientAccount,140);
     showShopNewAccountBalance(*shopAccount, 0);
     showShoppingPrice<MAX_NUMBER_OF_PRODUCTS>( *basket);
-//    theMessage<MAX_NUMBER_OF_PRODUCTS>();
-//    showChosenProducts<MAX_NUMBER_OF_PRODUCTS>(*shopping);
-//    availableMoney<MAX_NUMBER_OF_PRODUCTS>(*basket, *client);
-
+    showCountAvailableProdcutInShop<MAX_NUMBER_OF_PRODUCTS>(*shop);
     changeClientNick(*client, "XYZ");
+    stock->changePassword(*userInterface, "1234");
     newProductId(*shopping, 5);
+    changeFilters(*userInterface, "groceries");
+    changeBankName(*bank);
+    userInterface->shopNumber(*shopping);
 
-        return 0;
+
+
+    return 0;
 }

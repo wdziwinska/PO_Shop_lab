@@ -4,15 +4,27 @@
 #include "Basket.h"
 
 template <unsigned int MaxNumberOfProducts>
+class Shopping;
+
+template <unsigned int MaxNumberOfProducts>
 class UserInterface{
 
     Stock<MaxNumberOfProducts>* stock;
 
     Basket<MaxNumberOfProducts>* basket;
 
+    string password;
+    string filters;
+
 public:
+    template <unsigned int Nr>
+    friend class Stock;
+
+    template <unsigned int Nr>
+    friend void changeFilters(UserInterface<Nr> &user, string filtr);
+
     template <unsigned int NrOfProducts>
-    void showShoppingPrice(Basket<NrOfProducts> &basket);
+    friend void showShoppingPrice(Basket<NrOfProducts> &basket);
 
     UserInterface(Stock<MaxNumberOfProducts>* stock,Basket<MaxNumberOfProducts>* basket){
         this->stock=stock;
@@ -47,8 +59,21 @@ public:
     void showTotalPrice(){
         cout<< endl <<"Total price: "<<this->basket->calculatePrice()<<endl;
     }
+
+    //class friend function
+    template<unsigned int Nr>
+    void shopNumber(Shopping<Nr> &shopping){
+        cout << "Shop number: " << shopping.shopNumber << endl;
+    }
 };
+
+template <unsigned int Nr>
+void changeFilters(UserInterface<Nr> &user, string filtr){
+    user.filters=filtr;
+    cout << "Filtres (friend function): " << user.filters <<endl;
+}
+
 template <unsigned int NrOfProducts>
 void showShoppingPrice(Basket<NrOfProducts> &basket){
-    cout<< endl <<"Total shopping price (friend function): "<< basket.calculatePrice()<<endl;
+    cout<< endl <<"Total shopping price: "<< basket.calculatePrice()<<endl;
 }
