@@ -15,6 +15,9 @@ class Basket{
 
     unsigned int productsCount = 0;
 
+    template <unsigned int NumberOfProducts>
+    void showProductsCount(Basket<NumberOfProducts> &basket);
+
 public:
     Basket(Stock<MaxNumberOfProducts>* stock, Shop<MaxNumberOfProducts>* shop){
         this->shop = shop;
@@ -64,3 +67,8 @@ private:
         return INTMAX_MAX;
     }
 };
+
+template <unsigned int NumberOfProducts>
+int showProductsCount(Basket<NumberOfProducts> &basket){
+    cout << endl << "Product count in basket: " << basket.getProductsCount();
+}

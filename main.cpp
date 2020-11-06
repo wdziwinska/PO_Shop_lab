@@ -36,9 +36,10 @@ int main() {
     userInterface->showTotalPrice();
 
     cout<< endl << "Account balance: "<< clientAccount->getBalance() << endl;
-    cout<< endl <<"Shop account balance: "<<shopAccount->getBalance() <<endl;
+    cout<< "Shop account balance: "<<shopAccount->getBalance() <<endl;
 
     showAllProducts<MAX_NUMBER_OF_PRODUCTS>(*stock);
+    showProductsCount<MAX_NUMBER_OF_PRODUCTS>(*basket);
 
     return 0;
 }
