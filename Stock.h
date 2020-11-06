@@ -43,6 +43,7 @@ public:
 
 template <unsigned int NumberOfProducts>
 void showAllProducts(Stock<NumberOfProducts> &stock){
+    cout << endl<< "Stock (friend function): " << endl;
     for(int i=0; i<stock.productsCount; i++){
         if (stock.products[i]->getName() == "empty name") {
             cout << "product not available" << endl;

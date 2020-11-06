@@ -32,7 +32,7 @@ public:
 
     void showBasketContain(){
         unsigned int productsCount = this->basket->getProductsCount();
-        cout << "Basket contains: "<< endl;
+        cout << endl << "Basket contains: "<< endl;
         for(int i=0;i<productsCount;i++) {
             Product *product = this->basket->getProduct(i);
             cout << "product id: " << product->getId() << ", ";
@@ -42,6 +42,6 @@ public:
     }
 
     void showTotalPrice(){
-        cout<<"Total price: "<<this->basket->calculatePrice()<<endl;
+        cout<< endl <<"Total price: "<<this->basket->calculatePrice()<<endl;
     }
 };
