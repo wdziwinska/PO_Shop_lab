@@ -1,5 +1,5 @@
 #include "Date.h"
 
-class GuaranteeDate: class Date{
+class GuaranteeDate: public Date{
 
 };

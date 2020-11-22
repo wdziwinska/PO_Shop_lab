@@ -1,4 +1,4 @@
-#pragma once;
+#pragma once
 #include "Product.h"
 #include "Stock.h"
 #include "Shop.h"

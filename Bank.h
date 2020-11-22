@@ -1,4 +1,4 @@
-#pragma once;
+#pragma once
 #include "ClientAccount.h"
 #include "ShopAccount.h"
 

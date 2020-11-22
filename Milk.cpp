@@ -1,26 +1,32 @@
-
 #include "Milk.h"
 
 using namespace std;
 
-Milk::Milk(string name, float price, int id) {
-    this->name=name;
-    this->price=price;
-    this->id=id;
+Milk::Milk(int id, string name, float price, int day, int month, int year){
+    this->name = name;
+    this->price = price;
+    this->id = id;
+    this->expirationDate = new ExpirationDate{day, month, year};
 }
+
 Milk::~Milk(){};
 
 float Milk::getPrice() {
-    return price;
+    return this->price;
 }
 
 string Milk::getName() {
-    return name;
+    return this->name;
 }
 
 unsigned int Milk::getId() {
-    return id;
+    return this->id;
 }
+
+ExpirationDate *Milk::getExpirationDate(){
+    return this->expirationDate;
+}
+
 void changeProductName(Milk &milk, string newName){
     milk.name=newName;
 }

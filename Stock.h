@@ -17,10 +17,10 @@ class Stock {
     unsigned int productsCount=4;
 
     Product* products[MaxNumberOfProducts]={
-        new Milk("Milk", 12.55,1),
+        new Milk(1,"Milk", 12.55,1,1,2020),
         new Cheese ("Cheese", 14.55, 2),
         new Ham ("Ham", 12.55, 3),
-        new Milk ("Milk", 13.55, 4)
+        new Milk (4, "Milk", 13.55,1,2,2020)
     };
 
     template <unsigned int NumberOfProducts>

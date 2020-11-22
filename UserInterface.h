@@ -1,4 +1,4 @@
-#pragma once;
+#pragma once
 #include "Stock.h"
 #include <iostream>
 #include "Basket.h"

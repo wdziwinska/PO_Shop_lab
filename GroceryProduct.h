@@ -1,10 +1,8 @@
 #include "Product.h"
 #include "ExpirationDate.h"
 
-class GroceryProduct {
-
-    ExpirationDate * expirationDate;
+class GroceryProduct: public Product {
 
 public:
-    virtual ExpirationDate getExpirationDate()=0;
+    virtual ExpirationDate *getExpirationDate() = 0;
 };
