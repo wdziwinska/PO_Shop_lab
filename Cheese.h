@@ -1,21 +1,19 @@
 #pragma once
-#include "Product.h"
+#include "DairyProduct.h"
+#include "ExpirationDate.h"
 
-class Cheese: public Product{
-
-    float price = 10;
-    string name = "mleko";
-    int id = 1;
+class Cheese: public DairyProduct{
 
 public:
-    friend void changeProductName(Cheese &cheese, string newName);
+    friend void changeProductName(Cheese &milk, string newName);
 
-    Cheese(string name, float price, int id);
+    Cheese(int id, string name, float price, int day, int month, int year);
 
     ~Cheese();
 
     virtual float getPrice() override;
     virtual string getName() override;
     virtual unsigned int getId() override;
+    virtual ExpirationDate *getExpirationDate() override;
 };
 

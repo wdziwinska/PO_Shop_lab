@@ -18,8 +18,8 @@ class Stock {
 
     Product* products[MaxNumberOfProducts]={
         new Milk(1,"Milk", 12.55,1,1,2020),
-        new Cheese ("Cheese", 14.55, 2),
-        new Ham ("Ham", 12.55, 3),
+        new Cheese (2,"Cheese", 14.55, 2,2,2021),
+        new Ham (3,"Ham", 12.55, 3,3,2022),
         new Milk (4, "Milk", 13.55,1,2,2020)
     };
 
