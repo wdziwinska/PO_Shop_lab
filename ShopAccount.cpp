@@ -12,7 +12,7 @@ ShopAccount::~ShopAccount(){
 
 }
 void ShopAccount::addMoney(float payment) {
-    this->balance += payment;
+    this->balance =this->balance + payment;
 }
 
 float ShopAccount::getBalance(){

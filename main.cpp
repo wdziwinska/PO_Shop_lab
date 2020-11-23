@@ -23,7 +23,7 @@ int main() {
     UserInterface<MAX_NUMBER_OF_PRODUCTS>* userInterface = new UserInterface<MAX_NUMBER_OF_PRODUCTS>(stock, basket);
 
 
-    ClientAccount* clientAccount = new ClientAccount(100);
+    ClientAccount* clientAccount = new ClientAccount(3000);
 
     Bank* bank = new Bank(clientAccount, shopAccount);
 
@@ -39,18 +39,18 @@ int main() {
     cout<< "Shop account balance: "<<shopAccount->getBalance() <<endl;
 
     //friends
-    showAllProducts<MAX_NUMBER_OF_PRODUCTS>(*stock);
-    showNewProductsCount<MAX_NUMBER_OF_PRODUCTS>(*basket,9);
-    showClientNewAccountBalance(*clientAccount,140);
-    showShopNewAccountBalance(*shopAccount, 0);
-    showShoppingPrice<MAX_NUMBER_OF_PRODUCTS>( *basket);
-    showCountAvailableProdcutInShop<MAX_NUMBER_OF_PRODUCTS>(*shop);
-    changeClientNick(*client, "XYZ");
-    stock->changePassword(*userInterface, "1234");
-    newProductId(*shopping, 5);
-    changeFilters(*userInterface, "groceries");
-    changeBankName(*bank);
-    userInterface->shopNumber(*shopping);
+//    showAllProducts<MAX_NUMBER_OF_PRODUCTS>(*stock);
+//    showNewProductsCount<MAX_NUMBER_OF_PRODUCTS>(*basket,9);
+//    showClientNewAccountBalance(*clientAccount,140);
+//    showShopNewAccountBalance(*shopAccount, 0);
+//    showShoppingPrice<MAX_NUMBER_OF_PRODUCTS>( *basket);
+//    showCountAvailableProdcutInShop<MAX_NUMBER_OF_PRODUCTS>(*shop);
+//    changeClientNick(*client, "XYZ");
+//    stock->changePassword(*userInterface, "1234");
+//    newProductId(*shopping, 5);
+//    changeFilters(*userInterface, "groceries");
+//    changeBankName(*bank);
+//    userInterface->shopNumber(*shopping);
 
 
 

@@ -5,6 +5,8 @@
 #include "Cheese.h"
 #include "EmptyProduct.h"
 #include "Ham.h"
+#include "IPhone.h"
+#include "Nokia.h"
 
 using namespace std;
 
@@ -14,13 +16,15 @@ class UserInterface;
 template <unsigned int MaxNumberOfProducts>
 class Stock {
 
-    unsigned int productsCount=4;
+    unsigned int productsCount=6;
 
     Product* products[MaxNumberOfProducts]={
         new Milk(1,"Milk", 12.55,1,1,2020),
         new Cheese (2,"Cheese", 14.55, 2,2,2021),
         new Ham (3,"Ham", 12.55, 3,3,2022),
-        new Milk (4, "Milk", 13.55,1,2,2020)
+        new Milk (4, "Milk", 13.55,1,2,2020),
+        new IPhone(5, "IPhone", 213.99, 15,10,2025),
+        new Nokia(6, "Nokia", 1999.99, 23,12,2023)
     };
 
     template <unsigned int NumberOfProducts>
