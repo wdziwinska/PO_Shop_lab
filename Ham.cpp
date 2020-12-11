@@ -3,7 +3,7 @@
 using namespace std;
 
 Ham::Ham(int id, string name, float price, int day, int month, int year, float weight, string ingredient,
-         unsigned int calories, string packetMaterial){
+         unsigned int calories, string packetMaterial, long long barcode, string manufacturerName){
     this->name = name;
     this->price = price;
     this->id = id;
@@ -11,6 +11,8 @@ Ham::Ham(int id, string name, float price, int day, int month, int year, float w
     this->weight = weight;
     this->ingredient = ingredient;
     this->calories = calories;
+    this->barcode =barcode;
+    this->manufacturerName =manufacturerName;
 }
 
 Ham::~Ham(){};
@@ -45,4 +47,12 @@ string Ham::getPacketMaterial() {
 
 unsigned int Ham::getCalories() {
     return this->calories;
+}
+
+string Ham::getManufacturerName() {
+    return this->manufacturerName;
+}
+
+long long Ham::getBarcode() {
+    return this->barcode;
 }

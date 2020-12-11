@@ -13,4 +13,6 @@ protected:
     string ingredient;
     unsigned int calories;
     string packetMaterial;
+    string manufacturerName;
+    long long barcode;
 };

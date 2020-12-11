@@ -6,7 +6,7 @@ class IPhone: public MobilePhones{
 
 public:
     IPhone(int id, string name, float price, int day, int month, int year, string operationSystem,
-           string processorName, int memory, string screenResolution);
+           string processorName, int memory, string screenResolution,  long long barcode, string manufacturerName);
 
     ~IPhone();
 
@@ -18,5 +18,7 @@ public:
     virtual string getProcessorName() override;
     virtual unsigned int getMemory() override;
     virtual string getScreenResolution() override;
+    virtual string getManufacturerName() override;
+    virtual long long getBarcode() override;
 
 };

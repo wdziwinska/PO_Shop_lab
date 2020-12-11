@@ -4,6 +4,8 @@ EmptyProduct::EmptyProduct(){
     this->name="empty name";
     this->price=0;
     this->id=0;
+    this->barcode=000;
+    this->manufacturerName="no name";
 }
 EmptyProduct::~EmptyProduct(){};
 
@@ -20,4 +22,12 @@ unsigned int EmptyProduct::getId() {
 }
 void changePrice(EmptyProduct &emptyProduct, float newPrice){
     emptyProduct.price = newPrice;
+}
+
+string EmptyProduct::getManufacturerName() {
+    return this->manufacturerName;
+}
+
+long long EmptyProduct::getBarcode() {
+    return this->barcode;
 }

@@ -20,13 +20,13 @@ class Stock {
     unsigned int productsCount=7;
 
     Product* products[MaxNumberOfProducts]={
-        new Milk(1,"Milk", 12.55,1,1,2020, 0.99, "water", 150, "paper"),
-        new Cheese (2,"Cheese", 14.55, 2,2,2021, 1, "milk", 300, "plastic"),
-        new Ham (3,"Ham", 12.55, 3,3,2022, 0.125, "meat", 200, "plastic"),
-        new Milk (4, "Milk", 13.55,1,2,2020, 0.99, "water", 150, "paper"),
-        new IPhone(5, "IPhone", 213.99, 15,10,2025, "IOS", "Bionic", 256, "4k"),
-        new Nokia(6, "Nokia", 1999.99, 23,12,2023, "MobileWindows", "qualcom", 32, "1080p"),
-        new Coats(7, "Coat", 199.99, 17, 01, 2020, "black", "cotton", "M", "Orsay")
+        new Milk(1,"Milk", 12.55,1,1,2020, 0.99, "water", 150, "paper", 768543, "Laciate"),
+        new Cheese (2,"Cheese", 14.55, 2,2,2021, 1, "milk", 300, "plastic", 345678, "Piatnica"),
+        new Ham (3,"Ham", 12.55, 3,3,2022, 0.125, "meat", 200, "plastic", 234567, "Sokolow"),
+        new Milk (4, "Milk", 13.55,1,2,2020, 0.99, "water", 150, "paper", 987645, "Laciate"),
+        new IPhone(5, "IPhone", 213.99, 15,10,2025, "IOS", "Bionic", 256, "4k", 45678, "IPhone"),
+        new Nokia(6, "Nokia", 1999.99, 23,12,2023, "MobileWindows", "qualcom", 32, "1080p", 345676, "Nokia"),
+        new Coats(7, "Coat", 199.99, 17, 01, 2020, "black", "cotton", "M", "Orsay", 987654, "Orsay")
     };
 
     template <unsigned int NumberOfProducts>

@@ -13,4 +13,6 @@ protected:
     unsigned int memory;
     string operationSystem;
     string screenResolution;
+    string manufacturerName;
+    long long barcode;
 };

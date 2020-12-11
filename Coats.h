@@ -7,7 +7,7 @@ class Coats: public FemaleClothing {
 public:
 
     Coats(int id, string name, float price, int day, int month, int year, string colour,
-          string material, string size, string brand);
+          string material, string size, string brand,  long long barcode, string manufacturerName);
 
     ~Coats();
 
@@ -19,4 +19,6 @@ public:
     virtual string getMaterial() override;
     virtual string getSize() override;
     virtual string getBrand() override;
+    virtual string getManufacturerName() override;
+    virtual long long getBarcode() override;
 };

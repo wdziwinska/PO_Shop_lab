@@ -3,7 +3,7 @@
 using namespace std;
 
 Cheese::Cheese(int id, string name, float price, int day, int month, int year, float weight, string ingredient,
-               unsigned int calories, string packetMaterial) {
+               unsigned int calories, string packetMaterial, long long barcode, string manufacturerName) {
     this->name = name;
     this->price = price;
     this->id = id;
@@ -12,6 +12,8 @@ Cheese::Cheese(int id, string name, float price, int day, int month, int year, f
     this->ingredient = ingredient;
     this->calories = calories;
     this->packetMaterial =packetMaterial;
+    this->barcode =barcode;
+    this->manufacturerName =manufacturerName;
 }
 
 Cheese::~Cheese(){};
@@ -45,6 +47,14 @@ unsigned int Cheese::getCalories() {
 
 string Cheese::getPacketMaterial() {
     return this->packetMaterial;
+}
+
+string Cheese::getManufacturerName() {
+    return this->manufacturerName;
+}
+
+long long Cheese::getBarcode() {
+    return this->barcode;
 }
 
 void changeProductName(Cheese &cheese, string newName){

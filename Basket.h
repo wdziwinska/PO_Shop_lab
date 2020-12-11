@@ -10,8 +10,8 @@ class Basket{
 
     Shop<MaxNumberOfProducts> *shop;
 
-    Product* products[MaxNumberOfProducts] = {new Cheese (1,"Cheese", 14.55, 2,2,2021, 0.99, "milk", 300, "plastic"),
-                                             new Ham (3,"Ham", 12.55, 3,3,2022, 1.2, "meat", 150, "plastic")};
+    Product* products[MaxNumberOfProducts] = {new Cheese (1,"Cheese", 14.55, 2,2,2021, 0.99, "milk", 300, "plastic", 34567, "Piatnica"),
+                                             new Ham (3,"Ham", 12.55, 3,3,2022, 1.2, "meat", 150, "plastic", 23456, "Sokolow")};
     unsigned int pCount=10;
     unsigned int productsCount = 0;
 

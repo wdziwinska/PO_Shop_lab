@@ -3,7 +3,7 @@
 using namespace std;
 
 Coats::Coats(int id, string name, float price, int day, int month, int year, string colour, string material,
-             string size, string brand){
+             string size, string brand,  long long barcode, string manufacturerName){
     this->name = name;
     this->price = price;
     this->id = id;
@@ -12,6 +12,8 @@ Coats::Coats(int id, string name, float price, int day, int month, int year, str
     this->material = material;
     this->size = size;
     this->brand = brand;
+    this->barcode =barcode;
+    this->manufacturerName =manufacturerName;
 }
 
 Coats::~Coats(){};
@@ -46,4 +48,12 @@ string Coats::getSize() {
 
 string Coats::getBrand() {
     return this->brand;
+}
+
+string Coats::getManufacturerName() {
+    return this->manufacturerName;
+}
+
+long long Coats::getBarcode() {
+    return this->barcode;
 }

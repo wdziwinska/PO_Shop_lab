@@ -13,4 +13,6 @@ protected:
     string material;
     string size;
     string brand;
+    string manufacturerName;
+    long long barcode;
 };
