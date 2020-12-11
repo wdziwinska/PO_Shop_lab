@@ -8,7 +8,7 @@ protected:
     float price;
     string name;
     int id;
-    ProductionDate *productionDate();
+    ProductionDate *productionDate;
     string colour;
     string material;
     string size;

@@ -17,7 +17,7 @@ class UserInterface;
 template <unsigned int MaxNumberOfProducts>
 class Stock {
 
-    unsigned int productsCount=6;
+    unsigned int productsCount=7;
 
     Product* products[MaxNumberOfProducts]={
         new Milk(1,"Milk", 12.55,1,1,2020, 0.99, "water", 150),
@@ -26,7 +26,7 @@ class Stock {
         new Milk (4, "Milk", 13.55,1,2,2020, 0.99, "water", 150),
         new IPhone(5, "IPhone", 213.99, 15,10,2025, "IOS", "Bionic", 256),
         new Nokia(6, "Nokia", 1999.99, 23,12,2023, "MobileWindows", "qualcom", 32),
-//        new Coats(7, "Coat", 199.99, 17, 01, 2020, "black", "cotton", "M")
+        new Coats(7, "Coat", 199.99, 17, 01, 2020, "black", "cotton", "M", "Orsay")
     };
 
     template <unsigned int NumberOfProducts>
