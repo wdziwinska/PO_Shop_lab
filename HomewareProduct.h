@@ -8,4 +8,5 @@ public:
     virtual string getOperationSysetm() = 0;
     virtual string getProcessorName() = 0;
     virtual unsigned int getMemory() = 0;
+    virtual string getScreenResolution() = 0;
 };

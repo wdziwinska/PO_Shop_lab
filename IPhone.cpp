@@ -3,7 +3,7 @@
 using namespace std;
 
 IPhone::IPhone(int id, string name, float price, int day, int month, int year, string operationSystem,
-               string processorName, int memory){
+               string processorName, int memory, string screenResolution){
     this->name = name;
     this->price = price;
     this->id = id;
@@ -11,6 +11,7 @@ IPhone::IPhone(int id, string name, float price, int day, int month, int year, s
     this->operationSystem = operationSystem;
     this->processorName = processorName;
     this->memory = memory;
+    this->screenResolution =screenResolution;
 }
 
 IPhone::~IPhone(){};
@@ -41,4 +42,8 @@ string IPhone::getProcessorName() {
 
 unsigned int IPhone::getMemory() {
     return this->memory;
+}
+
+string IPhone::getScreenResolution() {
+    return this->screenResolution;
 }

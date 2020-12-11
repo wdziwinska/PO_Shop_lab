@@ -12,4 +12,5 @@ protected:
     string processorName;
     unsigned int memory;
     string operationSystem;
+    string screenResolution;
 };

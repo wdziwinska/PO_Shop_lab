@@ -6,7 +6,7 @@ class Nokia: public MobilePhones{
 
 public:
     Nokia(int id, string name, float price, int day, int month, int year, string operationSystem,
-          string processorName, unsigned int memory);
+          string processorName, unsigned int memory, string screenResolution);
 
     ~Nokia();
 
@@ -17,4 +17,6 @@ public:
     virtual string getOperationSysetm() override;
     virtual string getProcessorName() override;
     virtual unsigned int getMemory() override;
+    virtual string getScreenResolution() override;
+
 };

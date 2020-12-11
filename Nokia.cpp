@@ -3,7 +3,7 @@
 using namespace std;
 
 Nokia::Nokia(int id, string name, float price, int day, int month, int year, string operationSystem,
-             string processorName, unsigned int memory){
+             string processorName, unsigned int memory, string screenResolution){
     this->name = name;
     this->price = price;
     this->id = id;
@@ -11,6 +11,7 @@ Nokia::Nokia(int id, string name, float price, int day, int month, int year, str
     this->operationSystem = operationSystem;
     this->processorName = processorName;
     this->memory = memory;
+    this->screenResolution =screenResolution;
 }
 
 Nokia::~Nokia(){};
@@ -41,4 +42,7 @@ string Nokia::getProcessorName() {
 
 unsigned int Nokia::getMemory() {
     return this->memory;
+}
+string Nokia::getScreenResolution() {
+    return this->screenResolution;
 }
