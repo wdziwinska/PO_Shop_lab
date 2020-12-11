@@ -14,7 +14,7 @@ public:
     virtual float getPrice() override;
     virtual string getName() override;
     virtual unsigned int getId() override;
-//    virtual ProductionDate *getPoductionDate();
+    virtual ProductionDate *getProductionDate() override;
     virtual string getColour() override;
     virtual string getMaterial() override;
     virtual string getSize() override;

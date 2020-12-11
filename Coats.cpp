@@ -27,10 +27,10 @@ string Coats::getName() {
 unsigned int Coats::getId() {
     return this->id;
 }
-//
-//ProductionDate *Coats::getPoductionDate(){
-//    return this->productionDate;
-//}
+
+ProductionDate *Coats::getProductionDate(){
+    return this->productionDate;
+}
 
 string Coats::getColour() {
     return this->colour;

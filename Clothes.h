@@ -5,7 +5,7 @@
 class Clothes: public Product {
 
 public:
-//    virtual ProductionDate *getProductionDate() = 0;
+    virtual ProductionDate *getProductionDate() = 0;
     virtual string getColour()=0;
     virtual string getMaterial()=0;
     virtual string getSize()=0;
