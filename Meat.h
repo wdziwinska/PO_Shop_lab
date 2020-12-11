@@ -9,4 +9,7 @@ protected:
     string name;
     int id;
     ExpirationDate *expirationDate;
+    float weight;
+    string ingredient;
+    unsigned int calories;
 };

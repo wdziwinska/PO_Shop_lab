@@ -2,11 +2,14 @@
 
 using namespace std;
 
-Milk::Milk(int id, string name, float price, int day, int month, int year){
+Milk::Milk(int id, string name, float price, int day, int month, int year, float weight, string ingredient, unsigned int calories){
     this->name = name;
     this->price = price;
     this->id = id;
     this->expirationDate = new ExpirationDate{day, month, year};
+    this->weight = weight;
+    this->ingredient = ingredient;
+    this->calories = calories;
 }
 
 Milk::~Milk(){};
@@ -25,6 +28,18 @@ unsigned int Milk::getId() {
 
 ExpirationDate *Milk::getExpirationDate(){
     return this->expirationDate;
+}
+
+float Milk::getWeight() {
+    return this->weight;
+}
+
+string Milk::getIngredient() {
+    return this->ingredient;
+}
+
+unsigned int Milk::getCalories() {
+    return this->calories;
 }
 
 void changeProductName(Milk &milk, string newName){

@@ -2,11 +2,15 @@
 
 using namespace std;
 
-Nokia::Nokia(int id, string name, float price, int day, int month, int year){
+Nokia::Nokia(int id, string name, float price, int day, int month, int year, string operationSystem,
+             string processorName, unsigned int memory){
     this->name = name;
     this->price = price;
     this->id = id;
     this->guaranteeDate = new GuaranteeDate{day, month, year};
+    this->operationSystem = operationSystem;
+    this->processorName = processorName;
+    this->memory = memory;
 }
 
 Nokia::~Nokia(){};
@@ -25,4 +29,16 @@ unsigned int Nokia::getId() {
 
 GuaranteeDate *Nokia::getGuaranteeDate(){
     return this->guaranteeDate;
+}
+
+string Nokia::getOperationSysetm() {
+    return this->operationSystem;
+}
+
+string Nokia::getProcessorName() {
+    return this->processorName;
+}
+
+unsigned int Nokia::getMemory() {
+    return this->memory;
 }

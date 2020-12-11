@@ -6,7 +6,7 @@ class Coats: public FemaleClothing {
 
 public:
 
-    Coats(int id, string name, float price, int day, int month, int year, string colour, string material, string size, string brand);
+    Coats(int id, string name, float price, int day, int month, int year, string colour, string material, string size);
 
     ~Coats();
 

@@ -2,11 +2,14 @@
 
 using namespace std;
 
-Ham::Ham(int id, string name, float price, int day, int month, int year){
+Ham::Ham(int id, string name, float price, int day, int month, int year, float weight, string ingredient, unsigned int calories){
     this->name = name;
     this->price = price;
     this->id = id;
     this->expirationDate = new ExpirationDate{day, month, year};
+    this->weight = weight;
+    this->ingredient = ingredient;
+    this->calories = calories;
 }
 
 Ham::~Ham(){};
@@ -25,4 +28,16 @@ unsigned int Ham::getId() {
 
 ExpirationDate *Ham::getExpirationDate(){
     return this->expirationDate;
+}
+
+float Ham::getWeight() {
+    return this->weight;
+}
+
+string Ham::getIngredient() {
+    return this->ingredient;
+}
+
+unsigned int Ham::getCalories() {
+    return this->calories;
 }

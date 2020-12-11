@@ -9,4 +9,7 @@ protected:
     string name;
     int id;
     GuaranteeDate *guaranteeDate;
+    string processorName;
+    unsigned int memory;
+    string operationSystem;
 };

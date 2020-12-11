@@ -2,11 +2,15 @@
 
 using namespace std;
 
-IPhone::IPhone(int id, string name, float price, int day, int month, int year){
+IPhone::IPhone(int id, string name, float price, int day, int month, int year, string operationSystem,
+               string processorName, int memory){
     this->name = name;
     this->price = price;
     this->id = id;
     this->guaranteeDate = new GuaranteeDate{day, month, year};
+    this->operationSystem = operationSystem;
+    this->processorName = processorName;
+    this->memory = memory;
 }
 
 IPhone::~IPhone(){};
@@ -25,4 +29,16 @@ unsigned int IPhone::getId() {
 
 GuaranteeDate *IPhone::getGuaranteeDate(){
     return this->guaranteeDate;
+}
+
+string IPhone::getOperationSysetm() {
+    return this->operationSystem;
+}
+
+string IPhone::getProcessorName() {
+    return this->processorName;
+}
+
+unsigned int IPhone::getMemory() {
+    return this->memory;
 }
