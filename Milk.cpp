@@ -2,7 +2,8 @@
 
 using namespace std;
 
-Milk::Milk(int id, string name, float price, int day, int month, int year, float weight, string ingredient, unsigned int calories){
+Milk::Milk(int id, string name, float price, int day, int month, int year, float weight,
+           string ingredient, unsigned int calories, string packetMaterial){
     this->name = name;
     this->price = price;
     this->id = id;
@@ -10,6 +11,7 @@ Milk::Milk(int id, string name, float price, int day, int month, int year, float
     this->weight = weight;
     this->ingredient = ingredient;
     this->calories = calories;
+    this->packetMaterial =packetMaterial;
 }
 
 Milk::~Milk(){};
@@ -40,6 +42,10 @@ string Milk::getIngredient() {
 
 unsigned int Milk::getCalories() {
     return this->calories;
+}
+
+string Milk::getPacketMaterial() {
+    return this->packetMaterial;
 }
 
 void changeProductName(Milk &milk, string newName){

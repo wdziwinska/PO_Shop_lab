@@ -12,4 +12,5 @@ protected:
     float weight;
     string ingredient;
     unsigned int calories;
+    string packetMaterial;
 };

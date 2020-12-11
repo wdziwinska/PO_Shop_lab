@@ -9,4 +9,5 @@ public:
     virtual float getWeight() = 0;
     virtual string getIngredient() = 0;
     virtual unsigned int getCalories() = 0;
+    virtual string getPacketMaterial() = 0;
 };
