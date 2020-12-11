@@ -7,6 +7,7 @@
 #include "Ham.h"
 #include "IPhone.h"
 #include "Nokia.h"
+#include "Coats.h"
 
 using namespace std;
 
@@ -25,6 +26,7 @@ class Stock {
         new Milk (4, "Milk", 13.55,1,2,2020),
         new IPhone(5, "IPhone", 213.99, 15,10,2025),
         new Nokia(6, "Nokia", 1999.99, 23,12,2023)
+//        new Coats(7, "Coat", 199.99, 17, 01, 2020, "black", "cotton", "M", "Orsay")
     };
 
     template <unsigned int NumberOfProducts>
