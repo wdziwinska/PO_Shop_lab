@@ -38,9 +38,14 @@ int main() {
     cout<< endl << "Account balance: "<< clientAccount->getBalance() << endl;
     cout<< "Shop account balance: "<<shopAccount->getBalance() <<endl;
 
+    //operatory przeciazenia
     (*clientAccount) -= 12;
     (*clientAccount) += 3;
     cout << *clientAccount;
+    cout << endl;
+    (*shopAccount) *= 2;
+    cout << *shopAccount;
+
 
     //friends
 //    showAllProducts<MAX_NUMBER_OF_PRODUCTS>(*stock);
@@ -55,8 +60,6 @@ int main() {
 //    changeFilters(*userInterface, "groceries");
 //    changeBankName(*bank);
 //    userInterface->shopNumber(*shopping);
-
-
 
     return 0;
 }

@@ -20,4 +20,9 @@ public:
 
     float getBalance();
 
+    void operator*=(int value);
+
+    void operator/=(int value);
+
+    friend std::ostream& operator<<(std::ostream&, const ShopAccount&);
 };

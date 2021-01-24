@@ -33,5 +33,5 @@ void ClientAccount::operator-=(int value) {
 }
 
 ostream& operator<<(ostream& s, const ClientAccount& clientAccount){
-    s << "new balance: " << clientAccount.balance;
+    s << "New client account balance: " << clientAccount.balance;
 }
