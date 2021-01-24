@@ -23,3 +23,15 @@ void showClientNewAccountBalance(ClientAccount &clientAccount, float newBalance)
     clientAccount.balance = newBalance;
     cout << endl << "Client Account New Balance (friend function): " << clientAccount.balance;
 }
+
+void ClientAccount::operator+=(int value) {
+    balance +=value;
+}
+
+void ClientAccount::operator-=(int value) {
+    balance -=value;
+}
+
+ostream& operator<<(ostream& s, const ClientAccount& clientAccount){
+    s << "new balance: " << clientAccount.balance;
+}

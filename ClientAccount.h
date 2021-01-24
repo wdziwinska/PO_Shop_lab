@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 class ClientAccount {
 
@@ -17,4 +18,10 @@ public:
 
     bool chargeMoney(float price);
     float getBalance();
+
+    void operator+=(int value);
+
+    void operator-=(int value);
+
+    friend std::ostream& operator<<(std::ostream&, const ClientAccount&);
 };

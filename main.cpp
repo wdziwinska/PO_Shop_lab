@@ -38,6 +38,10 @@ int main() {
     cout<< endl << "Account balance: "<< clientAccount->getBalance() << endl;
     cout<< "Shop account balance: "<<shopAccount->getBalance() <<endl;
 
+    (*clientAccount) -= 12;
+    (*clientAccount) += 3;
+    cout << *clientAccount;
+
     //friends
 //    showAllProducts<MAX_NUMBER_OF_PRODUCTS>(*stock);
 //    showNewProductsCount<MAX_NUMBER_OF_PRODUCTS>(*basket,9);
